@@ -1,0 +1,65 @@
+!SESSION 2020-06-13 21:44:12.067 -----------------------------------------------
+eclipse.buildId=4.6.0.202003181317-RELEASE
+java.version=11.0.7
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -data /home/adii/Documents/Projects/Java/ApnaBazaar/Backend/frontend/frontend/backend/BookDemo -os linux -ws gtk -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2020-06-13 21:44:16.981
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-13 21:44:16.981
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76b019c4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@221961af,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-13 21:44:16.981
+!MESSAGE A conflict occurred for CTRL+SHIFT+B:
+Binding(CTRL+SHIFT+B,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.ToggleBreakpoint,Toggle Breakpoint,
+		Creates or removes a breakpoint,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@32ddcca,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+B,
+	ParameterizedCommand(Command(com.helospark.spark.builder.commands.generateDefaultBuilderCommand,Generate Default Builder,
+		,
+		Category(com.helospark.spark.builder.commands.category,Category,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1ddc8fc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+B,
+	ParameterizedCommand(Command(com.helospark.spark.builder.commands.generateBuilderCommand,Generate Regular Builder,
+		,
+		Category(com.helospark.spark.builder.commands.category,Category,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@77d58f3a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+B,
+	ParameterizedCommand(Command(com.helospark.spark.builder.commands.generateStagedBuilderCommand,Generate Staged Builder,
+		,
+		Category(com.helospark.spark.builder.commands.category,Category,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e288c76,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2020-06-13 21:45:59.749
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
