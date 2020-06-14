@@ -1,0 +1,7 @@
+1. After installing all the dependencies and the basic setup.
+2. Open project BookDemo in the Backend folder using STS or any other IDE with Java Version Set to 1.8
+3. Run the backend server by right click on the project and run as Spring Boot Application.
+4. If the Server runs now go back to Frontend folder.
+5. Open this folder location in Command Line or Terminal and run npm install.
+6. Once the installation completes now run - 
+        npm start  // to start the Frontend server

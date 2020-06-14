@@ -1,0 +1,3 @@
+1. Install Java 8 
+2. Install any IDE (prefavourly STS)
+3. Install mysql  Ver 14.14 Distrib 5.7.30 

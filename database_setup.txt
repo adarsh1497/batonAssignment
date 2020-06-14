@@ -1,0 +1,7 @@
+1. Once the mysql Ver 14.14 Distrib 5.7.30  is installed follow below.
+2. open mysql prompt in command line or cmd using mysql.
+3. once inside the mysql prompt run command - 
+        - create database bookdemo ;
+        - create user 'bookdemo'@'localhost' identified by  'Admin1@$' ;
+        - grant all priviledges on bookdemo.* 'bookdemo'@'localhost' ;
+4. use bookdemo;
