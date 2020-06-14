@@ -1,0 +1,967 @@
+{
+	"info": {
+		"_postman_id": "96711145-055a-4dfe-a535-c015a33f490e",
+		"name": "Data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9000/author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Adarsh\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/3/addbook/23",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"common Book by aditya and adarsh\",\n    \"image\" : \"Book Image\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"common Book by aditya and adarsh\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/3/addbook/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"3",
+						"addbook",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/1/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"common Book by aditya and adarsh\",\n    \"image\" : \"Book Image\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"common Book by aditya and adarsh\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/1/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"1",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/books?page=0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 5 By adarsh\",\n    \"image\" : \"Img 5 By adarsh\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 5 by adarsh \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/books?page=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 5 By Rahul\",\n    \"image\" : \"Img 5 By Rahul\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 5 by Rahul \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/books?page=2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 5 By Rahul\",\n    \"image\" : \"Img 5 By Rahul\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 5 by Rahul \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/books?page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/books?page=1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 5 By Rahul\",\n    \"image\" : \"Img 5 By Rahul\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 5 by Rahul \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/books?page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/books?page=0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 5 By Rahul\",\n    \"image\" : \"Img 5 By Rahul\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 5 by Rahul \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/books?page=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/4/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 5 By Rahul\",\n    \"image\" : \"Img 5 By Rahul\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 5 by Rahul \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/4/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"4",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/4/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 4 By Rahul\",\n    \"image\" : \"Img 4 By Rahul\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 4 by Rahul \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/4/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"4",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Aman\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Brij kishore Gupta\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Rahul\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Adarsh\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/4/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 3 By Rahul\",\n    \"image\" : \"Img 3 By Rahul\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 3 by Rahul \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/4/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"4",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"aditya\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/4/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 2 By Rahul\",\n    \"image\" : \"Img 2 By Rahul\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 2 by Rahul \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/4/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"4",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/4/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 1 By Rahul\",\n    \"image\" : \"Img 1 By Rahul\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 1 by Rahul \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/4/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"4",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 5 By adarsh\",\n    \"image\" : \"Img 5 By adarsh\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 5 by adarsh \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/books?page=1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 5 By adarsh\",\n    \"image\" : \"Img 5 By adarsh\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 5 by adarsh \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/books?page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/3/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 5 By adarsh\",\n    \"image\" : \"Img 5 By adarsh\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 5 by adarsh \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/3/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"3",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/3/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 4 By adarsh\",\n    \"image\" : \"Img 4 By adarsh\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 4 by adarsh \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/3/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"3",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/3/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 3 By adarsh\",\n    \"image\" : \"Img 3 By adarsh\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 3 by adarsh \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/3/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"3",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/3/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 2 By adarsh\",\n    \"image\" : \"Img 2 By adarsh\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 2 by adarsh \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/3/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"3",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/3/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 1 By adarsh\",\n    \"image\" : \"Img 1 By adarsh\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 1 by adarsh \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/3/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"3",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/1/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 5 By Aditya\",\n    \"image\" : \"Img 5 By Aditya\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 5 by aditya \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/1/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"1",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/1/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 4 By Aditya\",\n    \"image\" : \"Img 4 By Aditya\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 4 by aditya \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/1/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"1",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/1/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 3 By Aditya\",\n    \"image\" : \"Img 3 By Aditya\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 3 by aditya \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/1/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"1",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/1/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 2 By Aditya\",\n    \"image\" : \"Img 2 By Aditya\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 2 by aditya \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/1/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"1",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 1 By Aditya\",\n    \"image\" : \"Img 1 By Aditya\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 1 by aditya \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/author/1/addbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Book 1 By Aditya\",\n    \"image\" : \"Img 1 By Aditya\",\n    \"price\" : 115,\n    \"rating\" : \"4.5\",\n    \"description\" : \"Book 1 by aditya \" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/author/1/addbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"author",
+						"1",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
