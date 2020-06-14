@@ -14,16 +14,14 @@ class AuthorList extends React.Component {
     componentDidMount() {
         axios.get(`http://localhost:9000/author`)
             .then(response => {
-                console.log(response)
+                //console.log(response)
                 this.setState({ authors: response.data });
             })
     }
 
     render() {
-
         const authorList = this.state.authors;
         return (
-
             <div>
                 <h3>List of Authors</h3>
                 {
@@ -36,9 +34,7 @@ class AuthorList extends React.Component {
                 }
             </div>
         );
-
     }
-
 }
 
 export default AuthorList;

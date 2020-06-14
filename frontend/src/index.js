@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BookList from './BookList';
 import AuthorList from './AuthorList';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import BookDescription from './BookDescription';
+import App from './App';
 
 
 const routing = (
@@ -18,7 +18,7 @@ const routing = (
         </li>
       </ul>
 
-      <Route path="/books" exact component={BookList} />
+      <Route path="/books" exact component={App} />
       <Route path="/books/:id" exact component={BookDescription} />
       <Route path="/author" exact component={AuthorList} />
     </div>
